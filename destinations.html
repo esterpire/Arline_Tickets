@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Destinations</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/index.html">Airline Ticket System</a>
+            <a href="/airlines.html">Manage Airlines</a>
+            <a href="/destinations.html">Manage Destinations</a>
+            <a href="/book-ticket.html">Book a Ticket</a>
+        </nav>
+        
+        <h1>Manage Destinations</h1>
+        <form>
+        <div>
+            <label for="destinationCity">Destination City</label>
+            <input type="text" name="destination" id="destinationCity" required>
+        </div>
+        <br>
+        <div>
+            <label for="destinationPrice">Price</label>
+            <input type="number" name="price" id="destinationPrice" required>
+        </div>
+        <br>
+        <div>
+            <label for="airlineName">Select Airline</label>
+            <select name="airline" id="airlineName" required></select>
+        </div>
+        <br>
+        <div>
+            <label for="travelTime">Travel Time(in hours)</label>
+            <input type="number" name="traveltime" id="travelTime" required>
+        </div>
+        <br>
+        <div>
+            <label for="availableDate">Available Date</label>
+            <input type="date" name="date" id="availableDate" required>
+        </div><br>
+        <button type="submit">Add Destination</button>
+    </form>
+        <br>
+        <h3>Destination List</h3>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Destination</th>
+                    <th>Airline</th>
+                    <th>Price</th>
+                    <th>Travel Time</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+</html>
